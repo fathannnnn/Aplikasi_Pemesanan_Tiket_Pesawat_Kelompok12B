@@ -1,2 +1,2 @@
-# Aplikasi_Pemesanan_Tiket_Pesawat_Kelompok12B
-Tugas Besar Teknik Industri 2024
+# Aplikasi Pemensanan Tiket Pesawat di Bandara X di Kota Solo
+Aplikasi sederhana untuk pemesanan tiket pesawat di bandara X di kota Solo, aplikasi ini menyediakan berbagai tujuan penerbangan di Pulau Jawa dengan pilihan jam terbang yang beragam. Di awal juga aplikasi ini meminta kita untuk memasukan akun pribadi, apabila belum memiliki kita dapat membuatnya terlebih dahulu. Aplikasi ini juga menyediakan 3 pilihan metode pembayaran. 
