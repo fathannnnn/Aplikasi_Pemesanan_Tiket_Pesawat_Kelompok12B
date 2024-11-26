@@ -4,9 +4,9 @@ Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawa
 - **Pendaftaran dan Login Akun**: Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
 - **Riwayat Pemesanan**: Tersedia fitur untuk melihat **riwayat pemesanan tiket** yang telah dilakukan sebelumnya.
 - **Pemesanan Tiket**:
-  - Setelah login, pengguna bisa memilih menu "Pesan Tiket" untuk memilih **tujuan penerbangan** dan mengisi data **pemesan**.
-  - Pilih kode penerbangan dan kota tujuan.
+  - Setelah login, pengguna bisa memilih menu "Pesan Tiket" untuk mengisi data **pemesan** dan memilih **tujuan penerbangan**.
   - Masukkan detail pemesanan seperti **nama**, **nomor handphone**, **email**, **tanggal take off**, dan **jamnya**.
+  - Pilih kode penerbangan untuk memilih kota tujuan.
   - Tentukan **jumlah tiket** yang akan dibeli.
   - Pembelian tiket dalam jumlah tertentu akan mendapatkan **potongan harga**. Tiket ini juga **dikenakan PPN**.
 - **Metode Pembayaran**:
