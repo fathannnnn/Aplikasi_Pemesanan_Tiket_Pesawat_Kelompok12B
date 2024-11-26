@@ -14,3 +14,4 @@ Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawa
   - Pembayaran melalui **Minimarket**
   - Pembayaran menggunakan **Kredit**
 
+![flowchart kelompok 12B](https://github.com/user-attachments/assets/464d5307-8135-4458-80cf-0b69cb3216b7)
