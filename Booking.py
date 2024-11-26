@@ -35,18 +35,18 @@ def get_tujuan_dan_harga(kode_penerbangan):
         "102": ("DELI SERDANG", 4300000),
         "103": ("PADANG PARIAMAN", 3700000),
         "104": ("PEKANBARU", 4500000),
-        "105": ("BATAM KEPULAUAN RIAU", 3200000)
-        "106": ("TANGGERANG", 4200000)
-        "107": ("DKI JAKARTA", 3200000)
-        "108": ("MAJALENGKA", 2200000)
-        "109": ("YOGYAKARTA", 2300000)
-        "110": ("SIDOARJO", 3200000)
-        "111": ("BADUNG", 4800000)
-        "112": ("LOMBOK TENGAH", 5200000)
-        "113": ("BALIKPAPAN", 4500000)
-        "114": ("SULAWESI SELATAN", 4700000)
-        "115": ("MANADO", 4500000)
-        "116": ("JAYAPURA", 6200000)
+        "105": ("BATAM KEPULAUAN RIAU", 3200000),
+        "106": ("TANGGERANG", 4200000),
+        "107": ("DKI JAKARTA", 3200000),
+        "108": ("MAJALENGKA", 2200000),
+        "109": ("YOGYAKARTA", 2300000),
+        "110": ("SIDOARJO", 3200000),
+        "111": ("BADUNG", 4800000),
+        "112": ("LOMBOK TENGAH", 5200000),
+        "113": ("BALIKPAPAN", 4500000),
+        "114": ("SULAWESI SELATAN", 4700000),
+        "115": ("MANADO", 4500000),
+        "116": ("JAYAPURA", 6200000),
         "117": ("LABUAN BAJO", 5600000)
 
         
