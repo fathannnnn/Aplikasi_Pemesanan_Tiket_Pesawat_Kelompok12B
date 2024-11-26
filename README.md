@@ -1,5 +1,5 @@
 # Aplikasi Pemesanan Tiket Pesawat di Bandara X di Kota Solo
-Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawat di Bandara X yang berlokasi di kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Pulau Jawa dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat dengan mudah memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
+Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawat di Bandara X yang berlokasi di kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat dengan mudah memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
 ## Fitur Utama
 - **Pendaftaran dan Login Akun**: Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
 - **Riwayat Pemesanan**: Tersedia fitur untuk melihat **riwayat pemesanan tiket** yang telah dilakukan sebelumnya.
