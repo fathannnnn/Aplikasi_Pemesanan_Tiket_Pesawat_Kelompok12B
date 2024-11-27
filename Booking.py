@@ -4,7 +4,7 @@ def garis():
     print("-" * 40)
 
 def tampilkan_menu():
-    print("\nSelamat datang di Garuda Indonesia (Kelas Ekonomi)")
+    print("\nSelamat datang di Prokom Air (Kelas Ekonomi)")
     print("Bandara Adi Soemarmo")
 
 def tampilkan_list_penerbangan():
@@ -87,3 +87,26 @@ def pilih_metode_pembayaran(jumlah_bayar):
                 print("Nomor kartu kredit tidak valid. Harap masukkan 16 digit angka.")
         else:
             print("Pilihan tidak valid. Silakan coba lagi.")
+            
+def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar):
+    garis()
+    print("Prokom Air (Kelas Ekonomi)")
+    print("Nama Pembeli    : ", nama)
+    print("Nomor Handphone : ", nomor)
+    print("Email           : ", email)
+    print("Kota Tujuan     : ", tujuan)
+    print("Tanggal Take Off: ", tanggal_takeoff)
+    print("Jam Take Off    : ", jadwal_dipilih)
+    print("Jumlah Beli     : ", jumlah)
+    garis()
+    print(f"Harga Tiket       : Rp. {harga:,}")
+    print(f"Potongan          : Rp. {potongan:,}")
+    print(f"PPN 11%           : Rp. {pajak:,}")
+    print("Metode Pembayaran : ", metode)
+    print("Instruksi         : ", instruksi)
+    garis()
+    print("Pelunasan Pembayaran Tiket")
+    print(f"Jumlah Bayar : Rp. {jumlah_bayar:,}")
+    print("\n------TERIMA KASIH TELAH MEMILIH PROKOM AIR------")
+    print("----------------ENJOY YOUR FLIGHT------------------")
+    print("-------------------SAFE FLIGHT!--------------------")

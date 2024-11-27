@@ -1,7 +1,7 @@
 from user_manager import UserManager
 from storage import load_riwayat, save_riwayat, simpan_pesanan
 from requirement import validasi_email, validasi_nomor_hp, validasi_tanggal_takeoff, perhitungan_diskon
-from Booking import tampilkan_menu, tampilkan_list_penerbangan, tampilkan_jadwal_penerbangan, get_tujuan_dan_harga, pilih_metode_pembayaran, garis
+from Booking import tampilkan_menu, tampilkan_list_penerbangan, tampilkan_jadwal_penerbangan, get_tujuan_dan_harga, pilih_metode_pembayaran, garis, output_hasil
 from datetime import datetime
 
 def main():
@@ -128,27 +128,7 @@ def main():
             save_riwayat(riwayat_pemesanan)
 
             # Output
-            garis()
-            print("Garuda Indonesia (Kelas Ekonomi)")
-            print("Nama Pembeli    : ", nama)
-            print("Nomor Handphone : ", nomor)
-            print("Email           : ", email)
-            print("Kota Tujuan     : ", tujuan)
-            print("Tanggal Take Off: ", tanggal_takeoff)
-            print("Jam Take Off    : ", jadwal_dipilih)
-            print("Jumlah Beli     : ", jumlah)
-            garis()
-            print(f"Harga Tiket       : Rp. {harga:,}")
-            print(f"Potongan          : Rp. {potongan:,}")
-            print(f"PPN 11%           : Rp. {pajak:,}")
-            print("Metode Pembayaran : ", metode)
-            print("Instruksi         : ", instruksi)
-            garis()
-            print("Pelunasan Pembayaran Tiket")
-            print(f"Jumlah Bayar : Rp. {jumlah_bayar:,}")
-            print("\n----TERIMA KASIH TELAH MEMILIH GARUDA INDONESIA----")
-            print("----------------ENJOY YOUR FLIGHT------------------")
-            print("-------------------SAFE FLIGHT!--------------------")
+            output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar)
 
         elif pilihan == "2":
             user_riwayat = [r for r in riwayat_pemesanan if r['username'] == current_user]
