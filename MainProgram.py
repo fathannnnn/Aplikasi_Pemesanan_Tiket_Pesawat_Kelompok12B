@@ -126,6 +126,8 @@ def main():
             pemesanan = simpan_pesanan(current_user, nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, jumlah_bayar, metode) 
             riwayat_pemesanan.append(pemesanan)
             save_riwayat(riwayat_pemesanan)
+            
+            input("\nTekan Enter untuk lanjut...")
 
             # Output
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar)
@@ -143,7 +145,7 @@ def main():
                 print(f"Nama             : {pesanan['nama']}")
                 print(f"Tujuan           : {pesanan['tujuan']}")
                 print(f"Tanggal Take Off : {pesanan['tanggal_keberangkatan']}")
-                print(f"Jam Take Off     : {pesanan['jadwal_dipilih']}")
+                print(f"Jam Take Off     : {pesanan['jam_keberangkatan']}")
                 print(f"Jumlah Tiket     : {pesanan['jumlah_tiket']}")
                 print(f"Total Pembayaran : Rp. {pesanan['total_bayar']:,}")
                 print(f"Metode Pembayaran: {pesanan['metode_pembayaran']}")

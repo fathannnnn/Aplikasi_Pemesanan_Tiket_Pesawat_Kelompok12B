@@ -13,7 +13,7 @@ def save_riwayat(riwayat):
         json.dump(riwayat, file, indent=4)
 
 def simpan_pesanan(current_user, nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, jumlah_bayar, metode):
-    {
+    return {
     "tanggal": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "username": current_user,
     "nama": nama,
