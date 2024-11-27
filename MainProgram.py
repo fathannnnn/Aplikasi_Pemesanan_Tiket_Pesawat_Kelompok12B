@@ -104,7 +104,7 @@ def main():
                     else:
                         print("Masukan nomoer yang valid.")
                 except ValueError:
-                    print("Harap masukan anggka")
+                    print("Harap masukan anggka.")
                     
             # Validasi jumlah tiket
             while True:

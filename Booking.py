@@ -107,6 +107,6 @@ def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, ju
     garis()
     print("Pelunasan Pembayaran Tiket")
     print(f"Jumlah Bayar : Rp. {jumlah_bayar:,}")
-    print("\n------TERIMA KASIH TELAH MEMILIH PROKOM AIR------")
+    print("\n------TERIMA KASIH TELAH MEMILIH PROKOM AIR-------")
     print("----------------ENJOY YOUR FLIGHT------------------")
     print("-------------------SAFE FLIGHT!--------------------")
