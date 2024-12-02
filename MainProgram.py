@@ -143,40 +143,86 @@ def kirim_invoice_email(penerima, nama, nomor, email, tujuan, tanggal_takeoff, j
     receiver_email = email  # gunakan parameter email yang diberikan
     password = "crnb tkrx ybje mgmh"  # ganti dengan password email anda
     
-    # Buat isi pesan dengan format invoice
+    # Buat HTML template untuk invoice
+    html_body = f"""
+    <html>
+    <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+        <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px;">
+            <h2 style="color: #333; text-align: center;">Invoice Tiket Pesawat Cakrawala Air</h2>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Nama Pembeli</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{nama}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Nomor Handphone</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{nomor}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{email}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Kota Tujuan</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{tujuan}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Tanggal Take Off</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{tanggal_takeoff}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Jam Take Off</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{jadwal_dipilih}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Jumlah Beli</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;">{jumlah} Tiket</td>
+                </tr>
+            </table>
+
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Harga Tiket</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">Rp. {harga:,}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Potongan</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">Rp. {potongan:,}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>PPN 11%</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">Rp. {pajak:,}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Jumlah Bayar</strong></td>
+                    <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right; font-weight: bold;">Rp. {jumlah_bayar:,}</td>
+                </tr>
+            </table>
+
+            <div style="background-color: #e9e9e9; padding: 10px; border-radius: 5px;">
+                <p><strong>Metode Pembayaran:</strong> {metode}</p>
+                <p><strong>Instruksi:</strong> {instruksi}</p>
+            </div>
+
+            <p style="text-align: center; margin-top: 20px; color: #666;">
+                Terima kasih telah memilih Cakrawala Air.<br>
+                Selamat menikmati penerbangan!
+            </p>
+        </div>
+    </body>
+    </html>
+    """
+    
+    # Buat email dengan HTML
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = receiver_email
     msg['Subject'] = "Invoice Tiket Pesawat Cakrawala Air"
 
-    body = f"""
-    Terima kasih telah memesan tiket di Cakrawala Air!
+    # Tambahkan body HTML ke dalam email
+    msg.attach(MIMEText(html_body, 'html'))
 
-    Detail Pemesanan:
-    --------------------------------------------------------------------------
-    Nama Pembeli            : {nama}
-    Nomor Handphone         : {nomor}
-    Email                   : {email}
-    Kota Tujuan             : {tujuan}
-    Tanggal Take Off        : {tanggal_takeoff}
-    Jam Take Off            : {jadwal_dipilih}
-    Jumlah Beli             : {jumlah} Tiket
-    ---------------------------------------------------------------------------
-    Harga Tiket             : Rp. {harga:,}
-    Potongan                : Rp. {potongan:,}
-    PPN 11%                 : Rp. {pajak:,}
-    Metode Pembayaran       : {metode}
-    Instruksi               : {instruksi}
-    ---------------------------------------------------------------------------
-    Jumlah Bayar            1: Rp. {jumlah_bayar:,}
-
-    Terima kasih telah memilih Cakrawala Air.
-    Selamat menikmati penerbangan!
-    """
-    
-    # Tambahkan body ke dalam email
-    msg.attach(MIMEText(body, 'plain'))
-    
     try:
         # Menghubungkan ke server SMTP Gmail dan mengirimkan email
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
