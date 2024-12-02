@@ -1,33 +1,34 @@
 import random
+import hashlib
 
 def garis():
     print("-" * 40)
 
 def tampilkan_menu():
-    print("\nSelamat datang di Prokom Air (Kelas Ekonomi)")
+    print("\nSelamat datang di Cakrawala Air (Kelas Ekonomi)")
     print("Bandara Adi Soemarmo")
 
 def tampilkan_list_penerbangan():
-    print("\nKode Penerbangan | Kota Tujuan | Harga Tiket")
-    print("------------------------------------------------")
-    print("101              | ACEH BESAR              | Rp. 5.000.000")
-    print("102              | DELI SERDANG            | Rp. 4.300.000")
-    print("103              | PADANG PARIAMAN         | Rp. 3.700.000")
-    print("104              | PEKANBARU               | Rp. 4.500.000")
-    print("105              | BATAM KEPULAUAN RIAU    | Rp. 3.200.000")
-    print("106              | TANGGERANG              | Rp. 4.200.000")
-    print("107              | DKI JAKARTA             | Rp. 3.200.000")
-    print("108              | MAJALENGKA              | Rp. 2.200.000")
-    print("109              | YOGYAKARTA              | Rp. 2.300.000")
-    print("110              | SIDOARJO                | Rp. 3.200.000")
-    print("111              | BADUNG                  | Rp. 4.800.000")
-    print("112              | LOMBOK TENGAH           | Rp. 5.200.000")
-    print("113              | BALIKPAPAN              | Rp. 4.500.000")
-    print("114              | SULAWESI SELATAN        | Rp. 4.700.000")
-    print("115              | MANADO                  | Rp. 4.100.000")
-    print("116              | JAYAPURA                | Rp. 6.200.000")
-    print("117              | LABUAN BAJO             | Rp. 5.600.000")
-    print("------------------------------------------------")
+    print("\nKode Penerbangan   |       Kota Tujuan       | Harga Tiket")
+    print("-------------------------------------------------------------")
+    print("101                | ACEH BESAR              | Rp. 5.000.000")
+    print("102                | DELI SERDANG            | Rp. 4.300.000")
+    print("103                | PADANG PARIAMAN         | Rp. 3.700.000")
+    print("104                | PEKANBARU               | Rp. 4.500.000")
+    print("105                | BATAM KEPULAUAN RIAU    | Rp. 3.200.000")
+    print("106                | TANGGERANG              | Rp. 4.200.000")
+    print("107                | DKI JAKARTA             | Rp. 3.200.000")
+    print("108                | MAJALENGKA              | Rp. 2.200.000")
+    print("109                | YOGYAKARTA              | Rp. 2.300.000")
+    print("110                | SIDOARJO                | Rp. 3.200.000")
+    print("111                | BADUNG                  | Rp. 4.800.000")
+    print("112                | LOMBOK TENGAH           | Rp. 5.200.000")
+    print("113                | BALIKPAPAN              | Rp. 4.500.000")
+    print("114                | SULAWESI SELATAN        | Rp. 4.700.000")
+    print("115                | MANADO                  | Rp. 4.100.000")
+    print("116                | JAYAPURA                | Rp. 6.200.000")
+    print("117                | LABUAN BAJO             | Rp. 5.600.000")
+    print("-------------------------------------------------------------")
 
 def get_tujuan_dan_harga(kode_penerbangan):
     tujuan_harga = {
@@ -55,8 +56,16 @@ def get_tujuan_dan_harga(kode_penerbangan):
     return tujuan_harga.get(kode_penerbangan, ("Kode Salah", 0))
 
 jadwal_tersedia = ["07.00", "10.00", "14.00", "18.00", "21.00"]
-def tampilkan_jadwal_penerbangan():
-    return random.sample(jadwal_tersedia, 3)
+def jadwal_harian(date_str, tujuan, num_slots=3):
+    seed_string = f"{date_str}-{tujuan}"
+    hash_obj = hashlib.md5(seed_string.encode())
+    seed = int(hash_obj.hexdigest()[:8], 16)
+    rng = random.Random(seed)
+    schedule = rng.sample(jadwal_tersedia, num_slots)
+    return sorted(schedule)
+
+def tampilkan_jadwal_penerbangan(tanggal_takeoff, tujuan):
+    return jadwal_harian(tanggal_takeoff, tujuan)
 
 def pilih_metode_pembayaran(jumlah_bayar):
     while True:
@@ -107,6 +116,6 @@ def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, ju
     garis()
     print("Pelunasan Pembayaran Tiket")
     print(f"Jumlah Bayar : Rp. {jumlah_bayar:,}")
-    print("\n------TERIMA KASIH TELAH MEMILIH PROKOM AIR-------")
-    print("----------------ENJOY YOUR FLIGHT------------------")
-    print("-------------------SAFE FLIGHT!--------------------")
+    print("\n--TERIMA KASIH TELAH MEMILIH CAKRAWALA AIR--")
+    print("-------------ENJOY YOUR FLIGHT--------------")
+    print("----------------SAFE FLIGHT!----------------")

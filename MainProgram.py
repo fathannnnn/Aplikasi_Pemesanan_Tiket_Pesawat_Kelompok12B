@@ -45,10 +45,14 @@ def main():
             print("\nForm Pemesanan Tiket")
             
             # Input dan validasi nama
-            nama = input("Nama Pembeli : ")
-            if not nama.strip():
-                print("Nama tidak boleh kosong.")
-                continue
+            while True:
+                nama = input("Nama Pembeli : ")
+                if not nama.strip():
+                    print("Nama tidak boleh kosong. Silakan isi ulang.")
+                elif not nama.replace(" ", "").isalpha():  
+                    print("Nama hanya boleh terdiri dari huruf. Silakan isi ulang.")
+                else:
+                    break
             
             # Validasi nomor handphone
             while True:
@@ -88,9 +92,10 @@ def main():
                     print("Format tanggal salah, masukan dengan format YYYY-MM-DD")
                     
             #tampilkan jadwal takeoff
-            jadwal_terpilih = tampilkan_jadwal_penerbangan()
+            jadwal_terpilih = tampilkan_jadwal_penerbangan(tujuan, tanggal_takeoff)
             
             #validasi jadwal takeoff
+            print("Jadwal Penerbangan Tersedia untuk ", tujuan, "pada tanggal ", tanggal_takeoff)
             print("Pilih Jadwal Take Off")
             for i, jadwal in enumerate(jadwal_terpilih, 1):
                 print(f"{i}. {jadwal}")
@@ -102,7 +107,7 @@ def main():
                         print(f"Anda telah memilih jadwal: {jadwal_dipilih}")
                         break
                     else:
-                        print("Masukan nomoer yang valid.")
+                        print("Masukan nomor yang valid.")
                 except ValueError:
                     print("Harap masukan anggka.")
                     
@@ -127,7 +132,7 @@ def main():
             riwayat_pemesanan.append(pemesanan)
             save_riwayat(riwayat_pemesanan)
             
-            input("\nTekan Enter untuk lanjut...")
+            input("\nTekan Enter untuk lanjut ke tampilan Invoice")
 
             # Output
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar)
@@ -151,7 +156,7 @@ def main():
                 print(f"Metode Pembayaran: {pesanan['metode_pembayaran']}")
                 garis()
             
-            input("\nTekan Enter untuk kembali ke menu utama...")
+            input("\nTekan Enter untuk kembali ke menu utama")
             
         elif pilihan == "3":
             print(f"\nBerhasil logout dari akun {current_user}!")
