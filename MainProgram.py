@@ -134,6 +134,7 @@ def main():
             
             input("\nTekan Enter untuk lanjut ke tampilan Invoice")
 
+            
             # Output
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar)
 

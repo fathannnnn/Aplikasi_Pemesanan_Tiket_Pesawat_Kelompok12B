@@ -24,10 +24,8 @@ def validasi_jadwal_takeoff(jadwal_terpilih, pilihan_jam):
         return jadwal_dipilih
     
 def perhitungan_diskon(jumlah, harga):
-    if jumlah == 2:
-        potongan = (jumlah * harga) * 0.05  # Diskon 5% untuk 2 tiket
-    elif jumlah >= 3:
-        potongan = (jumlah * harga) * 0.1   # Diskon 10% untuk 3 tiket atau lebih
+    if jumlah == 3:
+        potongan = (jumlah * harga) * 0.1  # Diskon 10% untuk 3 tiket atau lebih
     else:
         potongan = 0
         

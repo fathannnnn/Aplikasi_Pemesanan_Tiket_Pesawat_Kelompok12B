@@ -29,6 +29,9 @@ def tampilkan_list_penerbangan():
     print("116                | JAYAPURA                | Rp. 6.200.000")
     print("117                | LABUAN BAJO             | Rp. 5.600.000")
     print("-------------------------------------------------------------")
+    print("\n🎉 PROMO SPESIAL 🎉")
+    print("- Pembelian 3 Tiket atau lebih: Diskon 10%")
+    print("-------------------------------------------------------------")
 
 def get_tujuan_dan_harga(kode_penerbangan):
     tujuan_harga = {
