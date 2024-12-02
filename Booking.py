@@ -1,8 +1,12 @@
 import random
 import hashlib
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import os
 
 def garis():
-    print("-" * 40)
+    print("-" * 100)
 
 def tampilkan_menu():
     print("\nSelamat datang di Cakrawala Air (Kelas Ekonomi)")
