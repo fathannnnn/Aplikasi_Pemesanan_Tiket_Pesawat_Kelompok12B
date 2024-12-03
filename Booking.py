@@ -101,7 +101,8 @@ def pilih_metode_pembayaran(jumlah_bayar):
         else:
             print("Pilihan tidak valid. Silakan coba lagi.")
             
-def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar):
+def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
+                 potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list):
     garis()
     print("Prokom Air (Kelas Ekonomi)")
     print("Nama Pembeli    : ", nama)
@@ -111,6 +112,11 @@ def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, ju
     print("Tanggal Take Off: ", tanggal_takeoff)
     print("Jam Take Off    : ", jadwal_dipilih)
     print("Jumlah Beli     : ", jumlah)
+    print("Daftar Penumpang : ")
+    for i in range(0, len(penumpang_list)):
+        print(f"    Penumpang {i+1}:")
+        print(f"    Nama         : {penumpang_list[i]["nama"]}")
+        print(f"    NIK          : {penumpang_list[i]["nik"]}")    
     garis()
     print(f"Harga Tiket       : Rp. {harga:,}")
     print(f"Potongan          : Rp. {potongan:,}")

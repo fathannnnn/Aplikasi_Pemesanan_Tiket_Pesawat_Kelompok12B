@@ -181,6 +181,10 @@ def main():
                 print(f"Tanggal Take Off : {pesanan['tanggal_keberangkatan']}")
                 print(f"Jam Take Off     : {pesanan['jam_keberangkatan']}")
                 print(f"Jumlah Tiket     : {pesanan['jumlah_tiket']}")
+                for i in range(0, len(penumpang_list)):
+                    print(f"    Penumpang {i+1}:")
+                    print(f"    Nama         : {penumpang_list[i]["nama"]}")
+                    print(f"    NIK          : {penumpang_list[i]["nik"]}")
                 print(f"Total Pembayaran : Rp. {pesanan['total_bayar']:,}")
                 print(f"Metode Pembayaran: {pesanan['metode_pembayaran']}")
                 garis()
