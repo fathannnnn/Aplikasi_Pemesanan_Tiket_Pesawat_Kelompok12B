@@ -22,7 +22,10 @@ def validasi_jadwal_takeoff(jadwal_terpilih, pilihan_jam):
         else:
             print("Masukan nomoer yang valid.")            
         return jadwal_dipilih
-    
+
+def validasi_nik(nik):
+    return nik.isdigit() and len(nik) == 16
+
 def perhitungan_diskon(jumlah, harga):
     if jumlah == 3:
         potongan = (jumlah * harga) * 0.1  # Diskon 10% untuk 3 tiket atau lebih

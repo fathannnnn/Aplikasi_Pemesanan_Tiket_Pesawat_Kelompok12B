@@ -1,9 +1,6 @@
 import random
-import hashlib
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 import os
+import hashlib
 
 def garis():
     print("-" * 100)
