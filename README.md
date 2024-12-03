@@ -1,7 +1,7 @@
 **KELOMPOK 12 B**
-1. Irfan Nur Huda (I0324050)
-2. Shinta Marito M (I0324068)
-3. Muhammad Fathan Hakim (I0324089)
+1. Irfan Nur Huda          (I0324050)
+2. Shinta Marito M         (I0324068)
+3. Muhammad Fathan Hakim   (I0324089)
    
 # Aplikasi Pemesanan Tiket Pesawat di Bandara X di Kota Solo
 Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawat di Bandara X yang berlokasi di kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat dengan mudah memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
