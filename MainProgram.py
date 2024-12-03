@@ -158,7 +158,7 @@ def main():
             
             # Kirim invoice email
             kirim_invoice_email(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, 
-                                jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar)
+                                jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
             
             input("\nTekan Enter untuk lanjut ke tampilan Invoice")
 

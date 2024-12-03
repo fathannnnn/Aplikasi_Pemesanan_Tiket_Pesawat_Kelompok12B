@@ -3,11 +3,21 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 def kirim_invoice_email(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, 
-                        jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar):
+                        jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list):
     sender_email = "cakrawalaair1@gmail.com"  # ganti dengan email anda
     receiver_email = email  # gunakan parameter email yang diberikan
     password = "crnb tkrx ybje mgmh"  # ganti dengan password email anda
     
+    penumpang_html = ""
+    for i, penumpang in enumerate(penumpang_list, 1):
+        penumpang_html += f"""
+        <tr>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Penumpang {i}</strong></td>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{penumpang['nama']}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{penumpang['nik']}</td>
+        </tr>
+        """
+        
     # Buat HTML template untuk invoice
     html_body = f"""
     <html>
@@ -44,6 +54,16 @@ def kirim_invoice_email(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipi
                     <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Jumlah Beli</strong></td>
                     <td style="padding: 10px; border-bottom: 1px solid #ddd;">{jumlah} Tiket</td>
                 </tr>
+            </table>
+            
+            <h3 style="color: #333; text-align: center;">Detail Penumpang</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                <tr>
+                    <th style="padding: 10px; border-bottom: 1px solid #ddd; text-align: left;">No</th>
+                    <th style="padding: 10px; border-bottom: 1px solid #ddd; text-align: left;">Nama Penumpang</th>
+                    <th style="padding: 10px; border-bottom: 1px solid #ddd; text-align: left;">NIK</th>
+                </tr>
+                {penumpang_html}
             </table>
 
             <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
