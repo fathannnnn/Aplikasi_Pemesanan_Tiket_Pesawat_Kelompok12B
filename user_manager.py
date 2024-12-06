@@ -1,6 +1,7 @@
 import json
 import os
 import hashlib
+from Booking import clear_screen
 
 class UserManager:
     def __init__(self):
@@ -22,6 +23,7 @@ class UserManager:
         return hashlib.sha256(password.encode()).hexdigest()
     
     def register(self):
+        clear_screen()
         print("\n=== REGISTRASI PENGGUNA BARU ===")
         while True:
             username = input("Masukkan username: ").strip()
@@ -47,6 +49,7 @@ class UserManager:
             return True
     
     def login(self):
+        clear_screen()
         print("\n=== LOGIN ===")
         username = input("Username: ").strip()
         password = input("Password: ")

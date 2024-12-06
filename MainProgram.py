@@ -1,7 +1,7 @@
 from user_manager import UserManager
 from storage import load_riwayat, save_riwayat, simpan_pesanan
 from requirement import validasi_email, validasi_nomor_hp, validasi_tanggal_takeoff, perhitungan_diskon, validasi_nik
-from Booking import tampilkan_menu, tampilkan_list_penerbangan, tampilkan_jadwal_penerbangan, get_tujuan_dan_harga, pilih_metode_pembayaran, garis, output_hasil
+from Booking import tampilkan_menu, tampilkan_list_penerbangan, tampilkan_jadwal_penerbangan, get_tujuan_dan_harga, pilih_metode_pembayaran, garis, output_hasil, clear_screen
 from datetime import datetime
 from Email_sender import kirim_invoice_email  
 
@@ -20,13 +20,16 @@ def main():
             pilihan = input("Pilih menu (1/2/3): ")
             
             if pilihan == "1":
+                clear_screen()
                 username = user_manager.login()
                 if username:
                     current_user = username
                     print(f"Selamat datang, {username}!")
             elif pilihan == "2":
+                clear_screen()
                 user_manager.register()
             elif pilihan == "3":
+                clear_screen()
                 print("\nTerima kasih telah menggunakan layanan kami!")
                 break
             else:
@@ -42,6 +45,7 @@ def main():
         pilihan = input("Masukkan pilihan (1/2/3): ")
         
         if pilihan == "1":
+            clear_screen()
             # Proses Pembelian
             print("\nForm Pemesanan Tiket")
             
@@ -66,6 +70,7 @@ def main():
             while True:
                 email = input("Email : ")
                 if validasi_email(email):
+                    clear_screen()
                     break
                 print("Format email tidak valid. Harap masukkan email yang benar.")
             
@@ -160,13 +165,15 @@ def main():
             kirim_invoice_email(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, 
                                 jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
             
+            clear_screen()
             input("\nTekan Enter untuk lanjut ke tampilan Invoice")
-
+            
             # Output
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                          potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
             
         elif pilihan == "2":
+            clear_screen()
             user_riwayat = [r for r in riwayat_pemesanan if r['username'] == current_user]
             if not user_riwayat:
                 print("\nBelum ada riwayat pemesanan.")
@@ -181,10 +188,10 @@ def main():
                 print(f"Tanggal Take Off : {pesanan['tanggal_keberangkatan']}")
                 print(f"Jam Take Off     : {pesanan['jam_keberangkatan']}")
                 print(f"Jumlah Tiket     : {pesanan['jumlah_tiket']}")
-                for i in range(0, len(penumpang_list)):
+                for i, penumpang in enumerate(pesanan['identitas_penumpang']):
                     print(f"    Penumpang {i+1}:")
-                    print(f"    Nama         : {penumpang_list[i]["nama"]}")
-                    print(f"    NIK          : {penumpang_list[i]["nik"]}")
+                    print(f"    Nama         : {penumpang['nama']}")
+                    print(f"    NIK          : {penumpang['nik']}")
                 print(f"Total Pembayaran : Rp. {pesanan['total_bayar']:,}")
                 print(f"Metode Pembayaran: {pesanan['metode_pembayaran']}")
                 garis()
@@ -192,6 +199,7 @@ def main():
             input("\nTekan Enter untuk kembali ke menu utama")
             
         elif pilihan == "3":
+            clear_screen()
             print(f"\nBerhasil logout dari akun {current_user}!")
             current_user = None
         

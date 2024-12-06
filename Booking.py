@@ -4,12 +4,17 @@ import hashlib
 
 def garis():
     print("-" * 100)
+    
+def clear_screen():
+    if os.name == 'nt':
+        os.system('cls')
 
 def tampilkan_menu():
     print("\nSelamat datang di Cakrawala Air (Kelas Ekonomi)")
     print("Bandara Adi Soemarmo")
 
 def tampilkan_list_penerbangan():
+    print("✈ ✈ ✈ ✈ ✈  LIST PENERBANGAN CAKRAWALA AIR  ✈ ✈ ✈ ✈ ✈")
     print("\nKode Penerbangan   |       Kota Tujuan       | Harga Tiket")
     print("-------------------------------------------------------------")
     print("101                | ACEH BESAR              | Rp. 5.000.000")
@@ -103,6 +108,7 @@ def pilih_metode_pembayaran(jumlah_bayar):
             
 def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                  potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list):
+    print("------------------INVOICE------------------")
     garis()
     print("Prokom Air (Kelas Ekonomi)")
     print("Nama Pembeli    : ", nama)
