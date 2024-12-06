@@ -7,7 +7,7 @@
 Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan melalui maskapai Cakrawala Air yang berlokasi di bandara Adi Soemarmo kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat membuat akun dengan mudah serta memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
 ## ✨Fitur Aplikasi
 - 🔐**Pendaftaran dan Login Akun** : Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
-- **Riwayat Pemesanan**: Tersedia fitur untuk melihat **riwayat pemesanan tiket** yang telah dilakukan sebelumnya.
+- 🧾**Riwayat Pemesanan**: Tersedia fitur untuk melihat **riwayat pemesanan tiket** yang telah dilakukan sebelumnya.
 - 🎫**Pemesanan Tiket**🎫
   - Setelah login, pengguna bisa memilih menu "Pesan Tiket" untuk mengisi data **pemesan** .
   - Masukkan detail pemesanan seperti **nama pembeli**, **nomor handphone**, **email**.
