@@ -3,7 +3,7 @@
 2. Shinta Marito M         (I0324068)
 3. Muhammad Fathan Hakim   (I0324089)
    
-# Aplikasi Pemesanan Tiket Pesawat di Bandara X di Kota Solo
+# Aplikasi Pemesanan Tiket Pesawat di Bandara Cakrawala Air di Kota Solo
 Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawat di Bandara X yang berlokasi di kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat dengan mudah memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
 ## Fitur Utama
 - **Pendaftaran dan Login Akun**: Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
