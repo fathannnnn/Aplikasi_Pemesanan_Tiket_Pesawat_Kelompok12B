@@ -3,20 +3,22 @@
 2. Shinta Marito M         (I0324068)
 3. Muhammad Fathan Hakim   (I0324089)
    
-# Aplikasi Pemesanan Tiket Pesawat di Bandara Cakrawala Air di Kota Solo
-Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan tiket pesawat di Bandara Cakrawala Air yang berlokasi di kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat dengan mudah memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
-## Fitur Utama
-- **Pendaftaran dan Login Akun**: Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
+# ✈️ Aplikasi Pemesanan Tiket Pesawat Maskapai Cakrawala Air di Bandara Adi Soemarmo Kota Solo
+Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan melalui maskapai Cakrawala Air yang berlokasi di bandara Adi Soemarmo kota Solo. Aplikasi ini menyediakan berbagai pilihan tujuan penerbangan di Indonesia dengan berbagai pilihan jam terbang yang fleksibel. Pengguna dapat membuat akun dengan mudah serta memesan tiket, melihat riwayat pemesanan, dan memilih metode pembayaran.
+## ✨Fitur Aplikasi
+- 🔐**Pendaftaran dan Login Akun** : Aplikasi akan meminta pengguna untuk **memasukkan akun pribadi**. Jika belum memiliki akun, pengguna dapat membuatnya terlebih dahulu.
 - **Riwayat Pemesanan**: Tersedia fitur untuk melihat **riwayat pemesanan tiket** yang telah dilakukan sebelumnya.
-- **Pemesanan Tiket**:
-  - Setelah login, pengguna bisa memilih menu "Pesan Tiket" untuk mengisi data **pemesan** dan memilih **tujuan penerbangan**.
-  - Masukkan detail pemesanan seperti **nama**, **nomor handphone**, **email**, **tanggal take off**, dan **jamnya**.
-  - Pilih kode penerbangan untuk memilih kota tujuan.
-  - Tentukan **jumlah tiket** yang akan dibeli.
+- 🎫**Pemesanan Tiket**🎫
+  - Setelah login, pengguna bisa memilih menu "Pesan Tiket" untuk mengisi data **pemesan** .
+  - Masukkan detail pemesanan seperti **nama pembeli**, **nomor handphone**, **email**.
+  - Pilih **kode penerbangan** untuk memilih kota tujuan dan isi **tanggal takeoff**, serta **jamnya**.
+  - Tentukan **jumlah tiket** yang akan dibeli dengan jumlah tiket maksimal 5.
   - Pembelian tiket dalam jumlah tertentu akan mendapatkan **potongan harga**. Tiket ini juga **dikenakan PPN**.
-- **Metode Pembayaran**:
+  - Masukkan **nama penumpang** dan **NIK** setiap masing-masing tiket.
+  - Pilih metode pembayaran untuk melakukan transaksi.
+  - Setelah itu Invoice dicetak dan dikirim ke email pembeli serta berisi instruksi pembayaran.
+- 💳**Metode Pembayaran**💳
   - Virtual Account
-  - Pembayaran melalui **Minimarket**
-  - Pembayaran menggunakan **Kredit**
-
-![flowchart kelompok 12B](https://github.com/user-attachments/assets/464d5307-8135-4458-80cf-0b69cb3216b7)
+  - Pembayaran di Minimarket
+  - Kartu Kredit
+- ![flowchart kelompok 12B](https://github.com/user-attachments/assets/464d5307-8135-4458-80cf-0b69cb3216b7)
