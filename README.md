@@ -22,3 +22,4 @@ Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan melalui mask
   - Pembayaran di Minimarket
   - Kartu Kredit
 - ![flowchart kelompok 12B](https://github.com/user-attachments/assets/464d5307-8135-4458-80cf-0b69cb3216b7)
+- ![site map kelompok 12B](https://github.com/shintamarito/TUTORPOSI24/blob/main/sitemap%20klmpk%2012.jpg)
