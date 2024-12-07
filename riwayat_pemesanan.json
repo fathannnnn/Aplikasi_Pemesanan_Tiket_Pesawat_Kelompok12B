@@ -1,0 +1,212 @@
+[
+    {
+        "tanggal": "2024-12-06 13:12:01",
+        "username": "qwerty",
+        "nama": "Irfan",
+        "nomor": "085959974105",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "PADANG PARIAMAN",
+        "tanggal_keberangkatan": "2024-12-14",
+        "jam_keberangkatan": "07.00",
+        "jumlah_tiket": 4,
+        "identitas_penumpang": [
+            {
+                "nama": "Fathan",
+                "nik": "1234567890987654"
+            },
+            {
+                "nama": "Rafa ",
+                "nik": "1234567890987654"
+            },
+            {
+                "nama": "Budi",
+                "nik": "1234567890987654"
+            },
+            {
+                "nama": "Vito",
+                "nik": "1234567890987654"
+            }
+        ],
+        "harga_tiket": 3700000,
+        "potongan": 0,
+        "pajak": 1628000.0,
+        "total_bayar": 16428000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 13:22:02",
+        "username": "qwerty",
+        "nama": "Irfan",
+        "nomor": "081204123921",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "DELI SERDANG",
+        "tanggal_keberangkatan": "2024-12-14",
+        "jam_keberangkatan": "07.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "Irfan",
+                "nik": "1234567890987654"
+            }
+        ],
+        "harga_tiket": 4300000,
+        "potongan": 0,
+        "pajak": 473000.0,
+        "total_bayar": 4773000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 13:25:11",
+        "username": "qwerty",
+        "nama": "irfan",
+        "nomor": "08129371298",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "ACEH BESAR",
+        "tanggal_keberangkatan": "2024-12-12",
+        "jam_keberangkatan": "10.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "irfan",
+                "nik": "1234567890987654"
+            }
+        ],
+        "harga_tiket": 5000000,
+        "potongan": 0,
+        "pajak": 550000.0,
+        "total_bayar": 5550000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 14:04:54",
+        "username": "qwerty",
+        "nama": "Irfan ",
+        "nomor": "081201238123",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "PEKANBARU",
+        "tanggal_keberangkatan": "2024-12-12",
+        "jam_keberangkatan": "07.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "Irfan",
+                "nik": "1234567890987654"
+            }
+        ],
+        "harga_tiket": 4500000,
+        "potongan": 0,
+        "pajak": 495000.0,
+        "total_bayar": 4995000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 14:23:21",
+        "username": "qwerty",
+        "nama": "Irfan",
+        "nomor": "0812731823912",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "PADANG PARIAMAN",
+        "tanggal_keberangkatan": "2024-12-12",
+        "jam_keberangkatan": "10.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "Irfan",
+                "nik": "1234567890987654"
+            }
+        ],
+        "harga_tiket": 3700000,
+        "potongan": 0,
+        "pajak": 407000.0,
+        "total_bayar": 4107000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 14:28:35",
+        "username": "qwerty",
+        "nama": "maul",
+        "nomor": "0876999999",
+        "email": "suki@gmail.com",
+        "tujuan": "ACEH BESAR",
+        "tanggal_keberangkatan": "2024-12-13",
+        "jam_keberangkatan": "07.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "rafa",
+                "nik": "0000000000000000"
+            }
+        ],
+        "harga_tiket": 5000000,
+        "potongan": 0,
+        "pajak": 550000.0,
+        "total_bayar": 5550000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 14:30:41",
+        "username": "qwerty",
+        "nama": "irfan",
+        "nomor": "0819203801011",
+        "email": "whdiawhdioqwhiduqwuidhqijsnmqkloi@gmail.com",
+        "tujuan": "ACEH BESAR",
+        "tanggal_keberangkatan": "2024-12-12",
+        "jam_keberangkatan": "10.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "irfan",
+                "nik": "0000000000000000"
+            }
+        ],
+        "harga_tiket": 5000000,
+        "potongan": 0,
+        "pajak": 550000.0,
+        "total_bayar": 5550000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 15:23:19",
+        "username": "qwerty",
+        "nama": "aris",
+        "nomor": "089999999999",
+        "email": "mfathanhakim16@gmail.com",
+        "tujuan": "BATAM KEPULAUAN RIAU",
+        "tanggal_keberangkatan": "2024-12-15",
+        "jam_keberangkatan": "14.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "aris gpt",
+                "nik": "3200000000000000"
+            }
+        ],
+        "harga_tiket": 3200000,
+        "potongan": 0,
+        "pajak": 352000.0,
+        "total_bayar": 3552000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-06 15:38:36",
+        "username": "qwerty",
+        "nama": "Irfan",
+        "nomor": "0812312931293",
+        "email": "fannhda1@gmail.com",
+        "tujuan": "ACEH BESAR",
+        "tanggal_keberangkatan": "2024-12-12",
+        "jam_keberangkatan": "10.00",
+        "jumlah_tiket": 1,
+        "identitas_penumpang": [
+            {
+                "nama": "irfa",
+                "nik": "3200000000000000"
+            }
+        ],
+        "harga_tiket": 5000000,
+        "potongan": 0,
+        "pajak": 550000.0,
+        "total_bayar": 5550000.0,
+        "metode_pembayaran": "Virtual Account"
+    }
+]
