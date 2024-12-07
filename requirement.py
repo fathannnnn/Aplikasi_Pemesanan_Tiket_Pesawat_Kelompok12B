@@ -26,8 +26,35 @@ def validasi_jadwal_takeoff(jadwal_terpilih, pilihan_jam):
 def validasi_nik(nik):
     if not (nik.isdigit() and len(nik) == 16 and nik.startswith("")):
         return False
+    
     kode_provinsi = int(nik[:2])
     if kode_provinsi < 1 or kode_provinsi > 38:
+        return False
+    
+    kode_kabupaten = int(nik[2:4])
+    if kode_kabupaten == 0:
+        return False
+    
+    kode_kecamatan = int(nik[4:6])
+    if kode_kecamatan == 0:
+        return False
+    
+    tanggal_lahir = int(nik[6:8])
+    if tanggal_lahir > 40:
+        tanggal_lahir -= 40
+    if tanggal_lahir < 1 or tanggal_lahir > 31:
+        return False
+    
+    bulan_lahir = int(nik[8:10])
+    if bulan_lahir < 1 or bulan_lahir > 12:
+        return False
+    
+    tahun_lahir = int(nik[10:12])
+    if tahun_lahir < 0 or tahun_lahir > 99:
+        return False
+    
+    nomor_urut = int(nik[12:])
+    if nomor_urut == 0:
         return False
     
     return True
