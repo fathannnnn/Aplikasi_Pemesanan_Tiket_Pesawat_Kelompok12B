@@ -24,7 +24,13 @@ def validasi_jadwal_takeoff(jadwal_terpilih, pilihan_jam):
         return jadwal_dipilih
 
 def validasi_nik(nik):
-    return nik.isdigit() and len(nik) == 16
+    if not (nik.isdigit() and len(nik) == 16 and nik.startswith("")):
+        return False
+    kode_provinsi = int(nik[:2])
+    if kode_provinsi < 1 or kode_provinsi > 38:
+        return False
+    
+    return True
 
 def perhitungan_diskon(jumlah, harga):
     if jumlah == 3:

@@ -3,7 +3,7 @@ import os
 import hashlib
 
 def garis():
-    print("-" * 100)
+    print("-" * 112)
     
 def clear_screen():
     if os.name == 'nt':
@@ -14,7 +14,7 @@ def tampilkan_menu():
     print("Bandara Adi Soemarmo")
 
 def tampilkan_list_penerbangan():
-    print("✈ ✈ ✈ ✈ ✈  LIST PENERBANGAN CAKRAWALA AIR  ✈ ✈ ✈ ✈ ✈")
+    print("✈️   ✈️   ✈️   ✈️   LIST PENERBANGAN CAKRAWALA AIR  ✈️   ✈️   ✈️   ✈️")
     print("\nKode Penerbangan   |       Kota Tujuan       | Harga Tiket")
     print("-------------------------------------------------------------")
     print("101                | ACEH BESAR              | Rp. 5.000.000")
@@ -108,7 +108,7 @@ def pilih_metode_pembayaran(jumlah_bayar):
             
 def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                  potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list):
-    print("------------------INVOICE------------------")
+    print("                                         🧾 🧾 🧾 INVOICE PEMBAYARAN 🧾 🧾 🧾")
     garis()
     print("Prokom Air (Kelas Ekonomi)")
     print("Nama Pembeli    : ", nama)
@@ -118,9 +118,9 @@ def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, ju
     print("Tanggal Take Off: ", tanggal_takeoff)
     print("Jam Take Off    : ", jadwal_dipilih)
     print("Jumlah Beli     : ", jumlah)
-    print("Daftar Penumpang : ")
+    print("Daftar Penumpang: ")
     for i in range(0, len(penumpang_list)):
-        print(f"    Penumpang {i+1}:")
+        print(f"    Penumpang {i+1}")
         print(f"    Nama         : {penumpang_list[i]["nama"]}")
         print(f"    NIK          : {penumpang_list[i]["nik"]}")    
     garis()
@@ -132,6 +132,6 @@ def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, ju
     garis()
     print("Pelunasan Pembayaran Tiket")
     print(f"Jumlah Bayar : Rp. {jumlah_bayar:,}")
-    print("\n--TERIMA KASIH TELAH MEMILIH CAKRAWALA AIR--")
-    print("-------------ENJOY YOUR FLIGHT--------------")
-    print("----------------SAFE FLIGHT!----------------")
+    print("\n----------------------------------- TERIMA KASIH TELAH MEMILIH CAKRAWALA AIR -----------------------------------")
+    print("------------------------------------------------ ENJOY YOUR FLIGHT ---------------------------------------------")
+    print("--------------------------------------------------- SAFE FLIGHT!------------------------------------------------")

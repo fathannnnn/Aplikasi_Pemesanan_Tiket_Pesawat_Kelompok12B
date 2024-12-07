@@ -49,7 +49,6 @@ class UserManager:
             return True
     
     def login(self):
-        clear_screen()
         print("\n=== LOGIN ===")
         username = input("Username: ").strip()
         password = input("Password: ")
@@ -76,3 +75,4 @@ class UserManager:
                 print(f"Password salah! Sisa percobaan: {self.max_attempts - user['attempts']}")
             self.save_users()
             return None
+    clear_screen()

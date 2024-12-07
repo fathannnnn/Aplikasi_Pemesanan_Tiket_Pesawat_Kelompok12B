@@ -24,6 +24,7 @@ def main():
                 username = user_manager.login()
                 if username:
                     current_user = username
+                    clear_screen()
                     print(f"Selamat datang, {username}!")
             elif pilihan == "2":
                 clear_screen()
@@ -144,7 +145,7 @@ def main():
                     nik = input("Masukan NIK (16 Digit Angka) : ")
                     if validasi_nik(nik):
                         break
-                    print ("Hasur teridiri dari angka sebanyak 16 digit")
+                    print ("Masukan NIK dengan benar!")
                     
                 penumpang_list.append({"nama": penumpang, "nik": nik})
                     
@@ -165,12 +166,13 @@ def main():
             kirim_invoice_email(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, 
                                 jumlah, harga, potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
             
-            clear_screen()
             input("\nTekan Enter untuk lanjut ke tampilan Invoice")
+            clear_screen()
             
             # Output
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                          potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
+            input("\nTekan Enter untuk lanjut ke tampilan Menu")
             
         elif pilihan == "2":
             clear_screen()
