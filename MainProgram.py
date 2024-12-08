@@ -182,6 +182,7 @@ def main():
             output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                          potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list)
             input("\nTekan Enter untuk lanjut ke tampilan Menu")
+            clear_screen()
             
         elif pilihan == "2":
             clear_screen()
