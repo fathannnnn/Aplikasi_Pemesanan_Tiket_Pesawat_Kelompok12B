@@ -156,6 +156,7 @@ def main():
                     break
                     
                 penumpang_list.append({"nama": penumpang, "nik": nik})
+                clear_screen()
                     
             # Perhitungan
             potongan, pajak, jumlah_bayar = perhitungan_diskon(jumlah, harga)

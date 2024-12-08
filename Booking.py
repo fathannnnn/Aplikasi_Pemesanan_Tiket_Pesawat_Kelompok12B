@@ -10,7 +10,7 @@ def clear_screen():
         os.system('cls')
 
 def tampilkan_menu():
-    print("\nSelamat datang di Cakrawala Air (Kelas Ekonomi)")
+    print("\nSelamat datang di Cakrawala Air")
     print("Bandara Adi Soemarmo")
 
 def tampilkan_list_penerbangan():
@@ -108,9 +108,9 @@ def pilih_metode_pembayaran(jumlah_bayar):
             
 def output_hasil(nama, nomor, email, tujuan, tanggal_takeoff, jadwal_dipilih, jumlah, harga, 
                  potongan, pajak, metode, instruksi, jumlah_bayar, penumpang_list):
-    print("                                         🧾 🧾 🧾 INVOICE PEMBAYARAN 🧾 🧾 🧾")
+    print("                                         🧾 🧾 🧾 INVOICE PEMBAYARAN🧾 🧾 🧾")
     garis()
-    print("Prokom Air (Kelas Ekonomi)")
+    print("Cakrawala Air (Kelas Ekonomi)")
     print("Nama Pembeli    : ", nama)
     print("Nomor Handphone : ", nomor)
     print("Email           : ", email)
