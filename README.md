@@ -36,7 +36,7 @@ Sistem menyediakan tiga metode pembayaran: virtual account, kartu kredit (dengan
 #library
 - datetime
 - os
-- haslib
+- hashlib
 - json
 - smtplib
 - random
