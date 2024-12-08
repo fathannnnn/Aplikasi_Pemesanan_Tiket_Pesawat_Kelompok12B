@@ -189,7 +189,8 @@ def main():
             user_riwayat = [r for r in riwayat_pemesanan if r['username'] == current_user]
             if not user_riwayat:
                 print("\nBelum ada riwayat pemesanan.")
-                continue 
+                continue
+            
             
             print("\nRIWAYAT PEMESANAN:")
             for idx, pesanan in enumerate(user_riwayat, 1):
@@ -209,6 +210,7 @@ def main():
                 garis()
             
             input("\nTekan Enter untuk kembali ke menu utama")
+            clear_screen()
             
         elif pilihan == "3":
             clear_screen()
