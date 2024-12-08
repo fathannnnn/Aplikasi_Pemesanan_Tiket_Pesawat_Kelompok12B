@@ -22,6 +22,7 @@ Aplikasi ini merupakan platform sederhana untuk melakukan pemesanan melalui mask
   - Virtual Account
   - Pembayaran di Minimarket
   - Kartu Kredit
+#flowchart
 - ![flowchart_kelompok_12B](https://github.com/user-attachments/assets/7bdf09ea-01e0-4834-a593-0767660daaaa)
   
 Flowchart ini menjelaskan proses pemesanan tiket mulai dari tahap login atau registrasi hingga pembayaran selesai. Awalnya, sistem memuat data riwayat dalam format JSON, lalu pengguna diberi pilihan untuk login atau membuat akun baru. Jika login berhasil, pengguna masuk ke menu utama dengan tiga opsi: memesan tiket, melihat riwayat transaksi, atau keluar dari sistem.
@@ -29,4 +30,13 @@ Flowchart ini menjelaskan proses pemesanan tiket mulai dari tahap login atau reg
 Saat memesan tiket, pengguna diminta mengisi data pribadi seperti nama, nomor HP, dan email. Setelah data tersebut diverifikasi, pengguna memasukkan informasi penerbangan, termasuk kode penerbangan, tanggal, jam keberangkatan, serta jumlah tiket yang ingin dipesan. Jika membeli tiga tiket atau lebih, pengguna otomatis mendapat diskon 10%. Selanjutnya, pengguna menginput nama penumpang dan NIK sebelum melanjutkan ke tahap pembayaran.
 
 Sistem menyediakan tiga metode pembayaran: virtual account, kartu kredit (dengan memasukkan nomor kartu), atau melalui minimarket. Harga tiket dihitung dengan menambahkan PPN, lalu semua detail transaksi disimpan ke file JSON. Setelah pembayaran berhasil, sistem menampilkan invoice sebagai bukti pembelian. Alur ini dirancang untuk memberikan pengalaman pemesanan tiket yang mudah dan terorganisir bagi pengguna.
+#sitemap
 - ![site map kelompok 12B](https://github.com/shintamarito/TUTORPOSI24/blob/main/sitemap%20klmpk%2012.jpg)
+
+#library
+- datetime
+- os
+- haslib
+- json
+- smtplib
+- random
