@@ -130,6 +130,7 @@ def main():
                     
             #Input Nama Penumpang
             penumpang_list = []
+            nik_terpakai = set()
             for i in range (jumlah):
                 print(f"\nMasukan identitas untuk penumpang ke-{i+1}:")
                 while True :
@@ -143,9 +144,16 @@ def main():
                     
                 while True:
                     nik = input("Masukan NIK (16 Digit Angka) : ")
-                    if validasi_nik(nik):
-                        break
-                    print ("Masukan NIK dengan benar!")
+                    if not validasi_nik(nik):
+                        print ("Masukan NIK dengan benar!")
+                        continue
+                        
+                    if nik in nik_terpakai:
+                        print("NIK sudah digunakan penumpang lain. Silahkan masukan NIK lain.")
+                        continue
+                    
+                    nik_terpakai.add(nik)
+                    break
                     
                 penumpang_list.append({"nama": penumpang, "nik": nik})
                     
