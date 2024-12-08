@@ -99,7 +99,7 @@ def pilih_metode_pembayaran(jumlah_bayar):
             metode = "Kartu Kredit"
             while True:
                 nomor_kartu = input("Masukkan nomor Kartu Kredit Anda (16 digit): ")
-                if len(nomor_kartu) == 16 and nomor_kartu.isdigit():
+                if len(nomor_kartu) == 16 and nomor_kartu.isdigit() and int(nomor_kartu) != 0:
                     instruksi = f"Pembayaran dilakukan menggunakan Kartu Kredit nomor: {nomor_kartu}"
                     return metode, instruksi
                 print("Nomor kartu kredit tidak valid. Harap masukkan 16 digit angka.")
