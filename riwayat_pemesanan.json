@@ -208,5 +208,83 @@
         "pajak": 550000.0,
         "total_bayar": 5550000.0,
         "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-20 16:39:45",
+        "username": "lohin",
+        "nama": "irvan",
+        "nomor": "087777777777",
+        "email": "mfathanhakim16@gmail.com",
+        "tujuan": "BADUNG",
+        "tanggal_keberangkatan": "2025-08-12",
+        "jam_keberangkatan": "14.00",
+        "jumlah_tiket": 2,
+        "identitas_penumpang": [
+            {
+                "nama": "fathan",
+                "nik": "3275011612040001"
+            },
+            {
+                "nama": "siti",
+                "nik": "3275011612040002"
+            }
+        ],
+        "harga_tiket": 4800000,
+        "potongan": 0,
+        "pajak": 1056000.0,
+        "total_bayar": 10656000.0,
+        "metode_pembayaran": "Virtual Account"
+    },
+    {
+        "tanggal": "2024-12-20 16:54:27",
+        "username": "prokom",
+        "nama": "fathan",
+        "nomor": "082222222222",
+        "email": "mfathanhakim16@gmail.com",
+        "tujuan": "MANADO",
+        "tanggal_keberangkatan": "2025-01-06",
+        "jam_keberangkatan": "18.00",
+        "jumlah_tiket": 2,
+        "identitas_penumpang": [
+            {
+                "nama": "shinta",
+                "nik": "3275011612040001"
+            },
+            {
+                "nama": "irfan",
+                "nik": "3672051706060001"
+            }
+        ],
+        "harga_tiket": 4500000,
+        "potongan": 0,
+        "pajak": 990000.0,
+        "total_bayar": 9990000.0,
+        "metode_pembayaran": "Kartu Kredit"
+    },
+    {
+        "tanggal": "2024-12-24 09:24:14",
+        "username": "prokom",
+        "nama": "sitow",
+        "nomor": "087777777777",
+        "email": "mfathanhakim@gmail.com",
+        "tujuan": "YOGYAKARTA",
+        "tanggal_keberangkatan": "2024-12-29",
+        "jam_keberangkatan": "18.00",
+        "jumlah_tiket": 2,
+        "identitas_penumpang": [
+            {
+                "nama": "fathan",
+                "nik": "3275011612040001"
+            },
+            {
+                "nama": "siti",
+                "nik": "3275011612040003"
+            }
+        ],
+        "harga_tiket": 2300000,
+        "potongan": 0,
+        "pajak": 506000.0,
+        "total_bayar": 5106000.0,
+        "metode_pembayaran": "Virtual Account"
     }
 ]

@@ -1,6 +1,7 @@
 import random
 import os
 import hashlib
+import json
 
 def garis():
     print("-" * 112)
@@ -40,29 +41,20 @@ def tampilkan_list_penerbangan():
     print("-------------------------------------------------------------")
 
 def get_tujuan_dan_harga(kode_penerbangan):
-    tujuan_harga = {
-        "101": ("ACEH BESAR", 5000000),
-        "102": ("DELI SERDANG", 4300000),
-        "103": ("PADANG PARIAMAN", 3700000),
-        "104": ("PEKANBARU", 4500000),
-        "105": ("BATAM KEPULAUAN RIAU", 3200000),
-        "106": ("TANGGERANG", 4200000),
-        "107": ("DKI JAKARTA", 3200000),
-        "108": ("MAJALENGKA", 2200000),
-        "109": ("YOGYAKARTA", 2300000),
-        "110": ("SIDOARJO", 3200000),
-        "111": ("BADUNG", 4800000),
-        "112": ("LOMBOK TENGAH", 5200000),
-        "113": ("BALIKPAPAN", 4500000),
-        "114": ("SULAWESI SELATAN", 4700000),
-        "115": ("MANADO", 4500000),
-        "116": ("JAYAPURA", 6200000),
-        "117": ("LABUAN BAJO", 5600000)
-
-        
-        
-    }
-    return tujuan_harga.get(kode_penerbangan, ("Kode Salah", 0))
+    try:
+        with open('data_penerbangan.json', 'r') as file:
+            data = json.load(file)
+            
+        if kode_penerbangan in data['tujuan_penerbangan']:
+            tujuan = data['tujuan_penerbangan'][kode_penerbangan]
+            return (tujuan['kota'], tujuan['harga'])
+        return ("Kode Salah", 0)
+    except FileNotFoundError:
+        print("Error: File data_penerbangan.json tidak ditemukan")
+        return ("Kode Salah", 0)
+    except json.JSONDecodeError:
+        print("Error: Format JSON tidak valid dalam data_penerbangan.json")
+        return ("Kode Salah", 0)
 
 jadwal_tersedia = ["07.00", "10.00", "14.00", "18.00", "21.00"]
 def jadwal_harian(date_str, tujuan, num_slots=3):

@@ -8,5 +8,15 @@
         "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "attempts": 0,
         "locked": false
+    },
+    "lohin": {
+        "password": "4a9ca4596692e94f9d2912b06a0d007564a22ee750339a6021c2392149b25d6d",
+        "attempts": 0,
+        "locked": false
+    },
+    "prokom": {
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "attempts": 0,
+        "locked": false
     }
 }

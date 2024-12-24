@@ -1,0 +1,72 @@
+{
+    "tujuan_penerbangan": {
+        "101": {
+            "kota": "ACEH BESAR",
+            "harga": 5000000
+        },
+        "102": {
+            "kota": "DELI SERDANG",
+            "harga": 4300000
+        },
+        "103": {
+            "kota": "PADANG PARIAMAN",
+            "harga": 3700000
+        },
+        "104": {
+            "kota": "PEKANBARU",
+            "harga": 4500000
+        },
+        "105": {
+            "kota": "BATAM KEPULAUAN RIAU",
+            "harga": 3200000
+        },
+        "106": {
+            "kota": "TANGGERANG",
+            "harga": 4200000
+        },
+        "107": {
+            "kota": "DKI JAKARTA",
+            "harga": 3200000
+        },
+        "108": {
+            "kota": "MAJALENGKA",
+            "harga": 2200000
+        },
+        "109": {
+            "kota": "YOGYAKARTA",
+            "harga": 2300000
+        },
+        "110": {
+            "kota": "SIDOARJO",
+            "harga": 3200000
+        },
+        "111": {
+            "kota": "BADUNG",
+            "harga": 4800000
+        },
+        "112": {
+            "kota": "LOMBOK TENGAH",
+            "harga": 5200000
+        },
+        "113": {
+            "kota": "BALIKPAPAN",
+            "harga": 4500000
+        },
+        "114": {
+            "kota": "SULAWESI SELATAN",
+            "harga": 4700000
+        },
+        "115": {
+            "kota": "MANADO",
+            "harga": 4100000
+        },
+        "116": {
+            "kota": "JAYAPURA",
+            "harga": 6200000
+        },
+        "117": {
+            "kota": "LABUAN BAJO",
+            "harga": 5600000
+        }
+    }
+}
